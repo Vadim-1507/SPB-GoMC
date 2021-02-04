@@ -15,6 +15,6 @@
 ### JSON-server
 
 Установите json-server через терминал используя команду 'npm i json-server' или 'npm i json-server -g' для глобальной установки.
-
+Для корректной работы используйте npm команду 'json-server src/db.json --port 3005'
 
 
