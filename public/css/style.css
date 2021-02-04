@@ -2,3 +2,140 @@
     width: 1000px;
     margin: 0 auto;
 }
+
+.product_photo {
+    position: relative;
+    margin: 10px 0 4px;
+    width: 220px;
+    height: 220px;
+}
+
+@media screen and (max-width: 1249px) {
+    .product_horizontal .product_status_tooltip_container {
+        position: absolute;
+        left: 45%;
+    }
+
+    .product_price_club_card_text {
+        margin-right: 15px;
+    }
+
+    .product.product_horizontal .product_price_points {
+        top: 75px;
+    }
+
+    .product.product_horizontal .product_units {
+        top: 95px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .product_price_club_card {
+        top: 10px;
+    }
+
+    .product_price_default {
+        top: 50px;
+    }
+
+    .product.product_horizontal .product_price_points {
+        top: 80px;
+    }
+
+    .product.product_horizontal .product_units {
+        top: 105px;
+    }
+
+}
+
+@media screen and (max-width: 999px) {
+    .container {
+        width: 800px;
+    }
+
+    .products_page {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .product_photo {
+        width: 220px;
+        height: 170px
+    }
+
+    .product_price_club_card {
+        top: auto;
+    }
+
+    .product_price_default {
+        top: auto;
+    }
+
+    .product_wrapper {
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+    }
+
+    .product_horizontal .product_count_wrapper {
+        left: 10px;
+        bottom: 10px;
+    }
+    .product .btn_cart {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 148px;
+        padding: 0;
+        cursor: pointer
+    }
+
+    .product_horizontal .product_price_club_card {
+        bottom: 135px;
+    }
+
+    .product_horizontal .product_price_default {
+        bottom: 105px;
+    }
+
+    .product.product_horizontal .product_units {
+        top: auto;
+        bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .container {
+        width: 650px;
+    }
+
+    .products_page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .container {
+        width: 400px;
+    }
+
+    .products_page {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 300px;
+    }
+}
+

@@ -13,7 +13,6 @@ body {
     background: #fff;
     color: #000;
     min-height: 100%;
-    min-width: 768px;
     position: relative
 }
 
@@ -4819,28 +4818,6 @@ textarea.textInput {
     }
 }
 
-.container {
-    margin: 0 auto
-}
-
-@media (min-width: 0px) and (max-width: 999px) {
-    .container {
-        width: 768px
-    }
-}
-
-@media (min-width: 1000px) and (max-width: 1249px) {
-    .container {
-        width: 1000px
-    }
-}
-
-@media (min-width: 1250px) {
-    .container {
-        width: 1250px
-    }
-}
-
 @media (min-width: 0px) and (max-width: 999px) {
     .contacts_page .grid, .index_page .grid {
         display: -ms-flexbox;
@@ -5847,13 +5824,6 @@ textarea.textInput {
     border-bottom-color: transparent
 }
 
-.product_photo {
-    position: relative;
-    margin: 10px 0 4px;
-    width: 220px;
-    height: 220px
-}
-
 .product_photo a {
     display: block
 }
@@ -5994,14 +5964,17 @@ textarea.textInput {
     background: #fff
 }
 
-.product .btn_cart {
-    position: absolute;
-    right: 10px;
-    bottom: 50px;
-    width: 148px;
-    padding: 0;
-    cursor: pointer
+@media screen  and (min-width: 1000px){
+    .product .btn_cart {
+        position: absolute;
+        right: 10px;
+        bottom: 50px;
+        width: 148px;
+        padding: 0;
+        cursor: pointer
+    }
 }
+
 
 .product .btn_cart .ic_cart {
     position: absolute;
@@ -6078,7 +6051,7 @@ textarea.textInput {
     display: block;
     position: absolute;
     right: 12px;
-    top: 75px
+    /*top: 75px*/
 }
 
 .product .product_price_points {
@@ -6091,11 +6064,11 @@ textarea.textInput {
     color: #999
 }
 
-@media (min-width: 0) and (max-width: 999px) {
-    .product_price_club_card_text {
-        margin-right: 0
-    }
-}
+/*@media (min-width: 0) and (max-width: 999px) {*/
+/*    .product_price_club_card_text {*/
+/*        margin-right: 0*/
+/*    }*/
+/*}*/
 
 @media (min-width: 1000px) {
     .product_horizontal .product_price_club_card {
@@ -6118,10 +6091,6 @@ textarea.textInput {
     .product_horizontal .product_price_default {
         top: 45px;
         bottom: inherit
-    }
-
-    .product_price_club_card_text {
-        margin-right: 0
     }
 }
 
@@ -6328,9 +6297,12 @@ textarea.textInput {
     display: none
 }
 
-.product.product_horizontal .product_tags {
-    display: block
+@media screen and (min-width: 1000px){
+    .product.product_horizontal .product_tags {
+        display: block
+    }
 }
+
 
 .product_horizontal .product_tags {
     float: left;
@@ -6357,11 +6329,6 @@ textarea.textInput {
         height: 545px
     }
 
-    .product_horizontal .btn_cart {
-        right: 10px;
-        bottom: 50px
-    }
-
     .product_horizontal .sticker_time {
         right: 0;
         top: 40px
@@ -6385,6 +6352,7 @@ textarea.textInput {
     }
 
     .product_horizontal .product_tags {
+        display: none;
         padding: 0;
         width: auto;
         font-size: 14px;
@@ -6398,13 +6366,11 @@ textarea.textInput {
 
     .product_horizontal .product_price_club_card {
         font-size: 28px;
-        bottom: 160px;
         right: 8px
     }
 
     .product_horizontal .product_price_default {
         font-size: 26px;
-        bottom: 134px;
         right: 8px
     }
 
@@ -6463,7 +6429,6 @@ textarea.textInput {
 
     .product_horizontal .product_tags {
         padding: 3px 0 65px 11px;
-        width: 330px;
         font-size: 14px;
         line-height: 18px
     }
@@ -6490,7 +6455,6 @@ textarea.textInput {
     .product_horizontal .product_status_tooltip_container {
         position: absolute;
         top: 8px;
-        left: 267px
     }
 
     .product_horizontal .product_price_club_card {
@@ -6576,8 +6540,6 @@ textarea.textInput {
 .product.product_horizontal .product_units {
     position: absolute;
     right: 12px;
-    top: 95px;
-    bottom: inherit
 }
 
 .product .product_units {
@@ -6598,7 +6560,6 @@ textarea.textInput {
         position: absolute;
         right: 15px;
         top: inherit;
-        bottom: 95px
     }
 
     .product_price_points {
@@ -15001,10 +14962,6 @@ iframe[name=google_conversion_frame] {
 .fast-add-up {
     border-bottom: none;
     top: 0
-}
-
-.stepper-arrow {
-    position: static
 }
 
 .fast-btn-search {
